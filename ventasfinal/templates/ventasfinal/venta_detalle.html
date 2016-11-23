@@ -1,0 +1,16 @@
+{% extends 'ventasfinal/base.html' %}
+
+{% block content %}
+        <div class="post">
+            {% if post.fecha_ingreso %}
+                <div class="date">
+                    {{ post.fecha_ingreso }}   
+            {% endif %}
+               <a class="btn btn-default" href="{% url 'venta_editar' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+               <a class="btn btn-default" href="{% url 'venta_eliminar' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+               </div>
+            <h1>{{ post.articulo }}</h1>
+            
+            <p>{{ post.articulo|linebreaksbr }}</p>
+        </div>
+{% endblock %}

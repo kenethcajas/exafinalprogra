@@ -1,6 +1,6 @@
 from django.contrib import admin
-from ventasfinal.models import Marca, Articulo, MarcaAdmin, ArticuloAdmin, Venta
+from ventasfinal.models import Usuario, Articulo, UsuarioAdmin, ArticuloAdmin, Venta
 
-admin.site.register(Marca, MarcaAdmin)
+admin.site.register(Usuario, UsuarioAdmin)
 admin.site.register(Articulo, ArticuloAdmin)
 admin.site.register(Venta)

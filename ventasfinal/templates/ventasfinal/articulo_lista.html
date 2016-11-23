@@ -1,0 +1,8 @@
+{% extends 'ventasfinal/base3.html' %}
+{% block content %}
+	{% for m in articulo %}
+	<div class="post">                
+<h1><a href="{% url 'ventasfinal.views.articulo_detalle' pk=m.pk %}">{{ m.articulo1 }}</a></h1>
+                </div>
+    {% endfor %}
+{% endblock %}

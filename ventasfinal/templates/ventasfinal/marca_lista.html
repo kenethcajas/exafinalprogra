@@ -1,0 +1,8 @@
+{% extends 'ventasfinal/base2.html' %}
+{% block content %}
+	{% for m in usuario %}
+	<div class="post">                
+<h1><a href="{% url 'ventasfinal.views.usuario_detalle' pk=m.pk %}">{{ m.usuario1 }}</a></h1>
+                </div>
+    {% endfor %}
+{% endblock %}

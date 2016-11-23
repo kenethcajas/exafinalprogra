@@ -1,0 +1,7 @@
+{% extends 'ventasfinal/base2.html' %}
+
+{% block content %}
+   <a class="btn btn-default" href="{% url 'usuario_editar' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+               <a class="btn btn-default" href="{% url 'usuario_eliminar' pk=post.pk %}"><span class="glyphicon glyphicon-remove"></span></a>
+            <h1>{{ post.usuario1 }}</h1>
+{% endblock %}
